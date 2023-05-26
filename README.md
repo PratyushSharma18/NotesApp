@@ -13,8 +13,24 @@ Architecture Implementation.
 
 -> Data Access Object
 
+-> Entity(Room allows you to create tables via an entity) which are being accessed through DAO.
+
 - LiveData
  
 - Architecture(Room, WorkManager, Lifecycle, DataBinding, Paging, Navigation).
 
 - RoomDb(Room Database) usages in which Room provides an abstraction layer over SQLite to allow fluent database access.
+
+- Reference via Google CodeLab.
+
+- Kotlin-kapt plugin for generate kotlin sources.
+
+- Usages of Room Components.
+
+- Usages of Lifecycle Components.
+
+- Usages UI and Testing.
+
+- Coroutines usages for intializing tasks on background thread rather than on main thread.
+
+
