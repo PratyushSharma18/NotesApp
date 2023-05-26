@@ -23,6 +23,8 @@ Architecture Implementation.
 
 - (Companion Object)Singleton Pattern for creating a single instance of roomDatabase.
 
+- Implementations of inferfaces for item click handing in recyclerview adapter.
+
 - Reference via Google CodeLab.
 
 - Kotlin-kapt plugin for generate kotlin sources.
@@ -33,7 +35,7 @@ Architecture Implementation.
 
 - Usages UI and Testing.
 
-- Coroutines usages for intializing tasks on background thread rather than on main thread.
+- Coroutines in viewModelScope usages for intializing tasks on background thread rather than on main thread.
 
 - Implementation of RecyclerView , RecyclerViewAdapter and ViewHolder. 
 
