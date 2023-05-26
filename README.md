@@ -11,6 +11,8 @@ Architecture Implementation.
 
 -> RoomDatabase(Entity, SQLite, DAO)
 
+-> Room is an ORM, Object Relational Mapping library. In other words, Room will map our database objects to Java objects.
+
 -> Data Access Object
 
 -> Entity(Room allows you to create tables via an entity) which are being accessed through DAO.
