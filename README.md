@@ -5,9 +5,9 @@ Architecture Implementation.
 
 -> UI Controller(Activity/Fragment)
 
--> ViewModel(Holds all data needed for UI)
+-> ViewModelProvider via AndroidViewModelFactory for ViewModel(Holds all Livedata needed for UI , LifeCycle aware & follows a separation of concern of data fetching wrt activity).
 
--> Repository(Single source of truth for all app data)
+-> Repository(Single source of truth for all app data means all data whether accessing from online sources or offline sources ).
 
 -> RoomDatabase(Entity, SQLite, DAO)
 
@@ -15,11 +15,13 @@ Architecture Implementation.
 
 -> Entity(Room allows you to create tables via an entity) which are being accessed through DAO.
 
-- LiveData
+- LiveData(UI components observe LiveData and LiveData observes LifeCycle owners means activity/fragment).
  
 - Architecture(Room, WorkManager, Lifecycle, DataBinding, Paging, Navigation).
 
 - RoomDb(Room Database) usages in which Room provides an abstraction layer over SQLite to allow fluent database access.
+
+- (Companion Object)Singleton Pattern for creating a single instance of roomDatabase.
 
 - Reference via Google CodeLab.
 
@@ -32,5 +34,9 @@ Architecture Implementation.
 - Usages UI and Testing.
 
 - Coroutines usages for intializing tasks on background thread rather than on main thread.
+
+- Implementation of RecyclerView , RecyclerViewAdapter and ViewHolder. 
+
+- Usage of Vector Assesst for icons import for Layout/Drawable processing in xmls.
 
 
